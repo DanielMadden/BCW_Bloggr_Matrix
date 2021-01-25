@@ -1,0 +1,80 @@
+:root {
+  --green0: rgb(27, 138, 45);
+  --green1: rgb(53, 224, 82);
+  --green2: rgb(94, 255, 121);
+  --green3: rgb(149, 255, 167);
+}
+
+@font-face {
+  font-family: PixelFont;
+  src: url("../fonts/VPPixel-Simplified.otf") format("opentype");
+  /* font-weight: bold; */
+}
+
+html, body, #app, main, #home, .page {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+body {
+  font-family: PixelFont;
+  color: var(--green2);
+  user-select: none;
+  /* background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/Galaxy1.jpg') no-repeat center 30% /cover; */
+  background-color: black;
+}
+
+hr {
+  border-top: var(--green1) 2px solid;
+  /* height: 3px; */
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 5px;
+}
+
+button {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border: var(--green2) 3px solid;
+  border-radius: 10px;
+  color: var(--green2);
+  /* overflow-x: hidden; */
+}
+
+button:hover {
+  background-color: var(--green2);
+  color: black;
+}
+
+#c {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* .modal-backdrop {
+  display: none;
+} */
+
+.fancy-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0);
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--green0);
+  border-radius: 20px;
+}

@@ -1,0 +1,12 @@
+#home {
+  width: 100%;
+}
+
+#account {
+  margin: 0 !important;
+}
+
+#row {
+  height: 100%;
+  overflow: hidden;
+}

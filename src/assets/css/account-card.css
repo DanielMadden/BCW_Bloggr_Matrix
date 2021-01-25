@@ -1,0 +1,85 @@
+#account-card {
+  width: 100%;
+  height: 100%;
+  /* max-height: 300px; */
+  overflow-y: hidden;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: var(--green1) 3px solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#account-image {
+  width: 100%;
+  max-width: 200px;
+}
+
+#view-account {
+  height: 100%;
+  width: 100%;
+}
+
+#view-login {
+  height: 100%;
+  width: 100%;
+}
+
+#account-top {
+  width: 100%;
+}
+
+#account-stats {
+  width: 100%;
+}
+
+#account-buttons {
+  height: calc(100% - 250px);
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+#account-buttons.full {
+  height: calc(100% - 50px)
+}
+
+.account-button {
+  max-width: 80%;
+  width: 80%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border: var(--green2) 3px solid;
+  border-radius: 10px;
+  color: var(--green2);
+  overflow-x: hidden;
+}
+
+.account-button:hover {
+  background-color: var(--green2);
+  color: black;
+}
+
+.account-button.active {
+  background-color: var(--green3);
+  color: black;
+  border: var(--green3) 3px solid;
+}
+
+.account-blog-button {
+  cursor: pointer;
+}
+
+.account-blog-button:hover {
+  color: var(--green3)
+}
+
+.account-logout-button {
+  cursor: pointer;
+}
+
+.account-logout-button:hover {
+  color: var(--green3)
+}

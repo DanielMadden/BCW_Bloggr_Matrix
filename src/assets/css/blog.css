@@ -1,0 +1,177 @@
+/* #region BLOG POST CARDS */
+
+.blog-post {
+  display: inline-block;
+  width: 95%;
+  margin-right: 10px;
+  /* margin: auto; */
+}
+
+.blog-card {
+  width: 100%;
+  /* max-height: 300px; */
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: var(--green1) 3px solid;
+  border-radius: 10px;
+}
+
+.blog-card-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+}
+
+.blog-card.image {
+  height: 200px;
+}
+
+.blog-image {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  /* z-index: 1; */
+}
+
+.blog-tags {
+  font-size: 80%;
+  color: var(--green3);
+  margin-left: 15px;
+}
+
+.blog-tag {
+  margin-right: 10px;
+  width: 100%;
+  word-break: break-all;
+}
+
+.blog-contents {
+  min-width: 200px;
+  /* z-index: 2; */
+}
+
+.blog-contents.image {
+  max-width: calc(100% - calc(200px * 0.9));
+}
+
+.blog-profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.blog-name {
+  color: var(--green3)
+}
+
+.blog-title {
+  color: var(--green2)
+}
+
+.blog-body {
+  color: var(--green1);
+  width: 100%;
+  /* height: 100px; */
+  overflow-y: hidden;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.blog-comment-amount {
+  margin-left: 10px;
+  color: var(--green1)
+}
+
+/* #endregion */
+
+/* #region BLOG EDITING/CREATING */
+
+input, textarea {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: var(--green1) outset 3px;
+  border-radius: 5px;
+  color: var(--green2);
+  resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--green0)
+}
+
+input:focus, textarea:focus {
+  background-color: var(--green1);
+  color: black;
+  outline: none;
+  border: var(--green1) solid 3px
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: black
+}
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#blog-form {
+  display: inline-block;
+  width: 95%;
+  margin-right: 10px;
+  /* margin: auto; */
+}
+
+#blog-form span {
+  color: var(--green3)
+}
+
+#blog-form-body {
+  height: 100px;
+  overflow-x: hidden;
+}
+
+#blog-form-submit {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+/* #endregion */
+
+/* #region BLOG VIEW */
+
+#blog-card {
+  max-height: fit-content;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: var(--green1) 3px solid;
+  border-radius: 10px;
+}
+
+#blog-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+#blog-contents.image {
+  padding-top: 10px;
+}
+
+/* #endregion */
